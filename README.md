@@ -32,5 +32,5 @@ sudo cp screen-rotate.sh /usr/bin/screen-rotate
 
 Then do "make && sudo make install" in the following folders
 
-lenovoYoga13BluetoothDriver/
-lenovoYoga13WifiDriver/
+- lenovoYoga13BluetoothDriver/
+- lenovoYoga13WifiDriver/
