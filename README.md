@@ -2,35 +2,35 @@
 
 ## Usage
 
+```bash
+~$ screen-rotate flip 
+~$ screen-rotate normal
+~$ screen-rotate right
+~$ screen-rotate inverse
+~$ screen-rotate left
 
-screen-rotate flip 
+//Toggle touchpad
+~$ touchpad
 
-screen-rotate normal
-
-screen-rotate right
-
-screen-rotate inverse
-
-screen-rotate left
-
+~$ touchpad on
+~$ touchpad off
+```
 
 ##Install instructions
 
+### Automatic
 
+./install.sh
 
-Copy to following to
- 
-20-intel.conf 		=> /usr/share/x11/xorg.conf.d/20-intel.conf
+### Manual
 
-touchpad.sh 		=> /usr/bin/touchpad
+```bash
+sudo cp 20-intel.conf /usr/share/X11/xorg.conf.d/20-intel.conf
+sudo cp touchpad.sh /usr/bin/touchpad
+sudo cp screen-rotate.sh /usr/bin/screen-rotate
+```
 
-screen-rotate.sh 	=> /usr/bin/screen-rotate
-
-Then doo
-
-make && sudo make install
-
-on the following folders
+Then do "make && sudo make install" in the following folders
 
 lenovoYoga13BluetoothDriver/
 lenovoYoga13WifiDriver/
